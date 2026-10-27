@@ -1,0 +1,19 @@
+{
+  "name": "playwright-dropdown-runner",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install && npm install --prefix client",
+    "dev": "concurrently -k \"npm:server\" \"npm:client\"",
+    "server": "node server.js",
+    "client": "npm --prefix client run dev",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
