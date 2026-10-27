@@ -1,0 +1,176 @@
+{
+    "createAuction": {
+        "auctionType": "Forward Auction",
+        "auctionName": "Test Auction",
+        "templateName": "Forward Auction template",
+        "UOM": "KG",
+        "delivery": "Hyderabad"
+    },
+    "createPurchaseRequisition": {
+        "prDescription": "pr description related to the purchase requisition",
+        "deliveryLocation": "Hyderabad",
+        "needByDate": "2024-06-30",
+        "businessEntity": "Entity1",
+        "buyer": "Harshit",
+        "currency": "INR",
+        "budget": "BUDGET_SAOP_009_08_87"
+    },
+    "addLine": {
+        "productName": "777 - Laptops",
+        "lineType": "Service",
+        "quantity": "2",
+        "uom": "Each",
+        "price": "234.67",
+        "prNumber": "PR_01008"
+    },
+    "approvers": {
+        "number": "PR_01008",
+        "action": "Approve",
+        "comments": "Approved"
+    },
+    "createBidRFQ": {
+        "type": "Bid",
+        "bidname": "RFQ",
+        "supplier": {
+            "name": [
+                "Demo",
+                "Tale industries"
+            ]
+        },
+        "termsType": "Terms",
+        "termsDescription": "Payment Terms"
+    },
+    "createBidRFP": {
+        "type": "Bid",
+        "bidname": "RFP",
+        "supplier": {
+            "name": [
+                "Demo",
+                "Tale industries"
+            ]
+        },
+        "criteriaCategory": {
+            "name": [
+                "Business",
+                "Finance"
+            ]
+        },
+        "criteriaDescription": "Test",
+        "criteriaOption": "Optional",
+        "criteriaValueType": "Text",
+        "criteriaWeight": "50",
+        "technicalTeam": {
+            "name": "Abhilash"
+        },
+        "commercialTeam": {
+            "name": "Sai"
+        },
+        "termsType": "Terms",
+        "termsDescription": "Here the terms description data"
+    },
+    "createBidTender": {
+        "type": "Bid",
+        "bidname": "Tender",
+        "supplier": {
+            "name": [
+                "Demo",
+                "Tale industries",
+                "Sai Corporation"
+            ]
+        },
+        "criteriaCategory": {
+            "name": [
+                "Business",
+                "Finance"
+            ]
+        },
+        "criteriaDescription": "Criteria Description",
+        "criteriaOption": "Optional",
+        "criteriaValueType": "Text",
+        "criteriaWeight": "50",
+        "technicalTeam": {
+            "name": "Abhilash"
+        },
+        "technicalApproveTeam": {
+            "name": "Mounika"
+        },
+        "commercialTeam": {
+            "name": "Sai"
+        },
+        "commercialApproveTeam": {
+            "name": "Pavan"
+        },
+        "committeeTeam": {
+            "name": [
+                "Manjunath",
+                "Ashok",
+                "Manikanta"
+            ]
+        },
+        "termsType": "Terms",
+        "termsDescription": "Payment Terms"
+    },
+    "supplierBid": {
+        "bidNumber": "RFQ260256",
+        "typeAction": "Participating",
+        "buyerNotes": "Acknowledge by the supplier"
+    },
+    "createContract": {
+        "type": "Contract",
+        "supplier": {
+            "name": "Sai Corporation"
+        }
+    },
+    "reviewer": {
+        "name": [
+            "Ashok"
+        ]
+    },
+    "clauses": {
+        "title": "Standard Quality Assurance Clause",
+        "description": "The supplier shall provide the documents related to quality assurance and certifications"
+    },
+    "contractNumber": "279712947",
+    "updateClauses": {
+        "editdescription": "Edit the clause description"
+    },
+    "createPurchaseOrder": {
+        "type": "PO",
+        "supplierName": "Sai Corporation",
+        "paymentTerms": "30 Days",
+        "advancePayment": "10"
+    },
+    "purchaseOrder": {
+        "poNumber": "PO_00494",
+        "action": "Approve",
+        "comments": "Approved"
+    },
+    "directBid": {
+        "bidDescription": "Enter the bid description",
+        "bidType": "Tender",
+        "businessEntity": "Entity1",
+        "buyer": "Harshit",
+        "currency": "INR",
+        "paymentTerms": "30 Days",
+        "deliveryLocation": "Chennai"
+    },
+    "directBidRFP": {
+        "bidDescription": "Enter the bid description",
+        "bidType": "Tender",
+        "businessEntity": "Entity1",
+        "buyer": "Harshit",
+        "currency": "INR",
+        "enterOpendate": "2026-07-23T17:10",
+        "enterClosedDate": "2026-07-26T17:27",
+        "paymentTerms": "30 Days",
+        "deliveryLocation": "Chennai"
+    },
+    "deliveryNote": {
+        "asn": "ASN-1889",
+        "quantity": "1",
+        "carrier": "DTDC",
+        "shipDate": "2026-10-07",
+        "arrivalDate": "2026-10-09",
+        "response": "Accept"
+    }
+}
