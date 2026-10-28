@@ -21,10 +21,10 @@
         "quantity": "2",
         "uom": "Each",
         "price": "234.67",
-        "prNumber": "PR_01011"
+        "prNumber": "PR_01039"
     },
     "approvers": {
-        "number": "PR_01011",
+        "number": "PR_01039",
         "action": "Approve",
         "comments": "Approved"
     },
@@ -111,7 +111,7 @@
         "termsDescription": "Payment Terms"
     },
     "supplierBid": {
-        "bidNumber": "RFQ260260",
+        "bidNumber": "RFQ260269",
         "typeAction": "Participating",
         "buyerNotes": "Acknowledge by the supplier"
     },
@@ -147,9 +147,9 @@
     },
     "directBid": {
         "bidDescription": "Enter the bid description",
-        "bidType": "Tender",
+        "bidType": "RFQ",
         "businessEntity": "Entity1",
-        "buyer": "Harshit",
+        "buyer": "Abhilash",
         "currency": "INR",
         "paymentTerms": "30 Days",
         "deliveryLocation": "Chennai"
@@ -158,7 +158,7 @@
         "bidDescription": "Enter the bid description",
         "bidType": "Tender",
         "businessEntity": "Entity1",
-        "buyer": "Harshit",
+        "buyer": "Abhilash",
         "currency": "INR",
         "enterOpendate": "2026-07-23T17:10",
         "enterClosedDate": "2026-07-26T17:27",

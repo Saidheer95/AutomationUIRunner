@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
-const API = 'http://localhost:3001/api';
+const API = 'http://localhost:3002/api';
 
 export default function App() {
   const [scripts, setScripts] = useState([]);
@@ -14,7 +14,7 @@ export default function App() {
     fetch(`${API}/scripts`)
       .then(r => { if (!r.ok) throw new Error('Could not load scripts.'); return r.json(); })
       .then(data => { setScripts(data); if (data.length) setScriptId(data[0].id); })
-      .catch(err => setError(`${err.message} Is the backend running on port 3001?`));
+      .catch(err => setError(`${err.message} Is the backend running on port 3002?`));
   }, []);
 
   useEffect(() => {
@@ -99,7 +99,7 @@ export default function App() {
         <pre ref={outputRef}>{run?.output || 'No test execution yet. Choose a script and click Run Test.'}</pre>
         {run && !running && <p className="exit">Exit code: {run.exitCode}</p>}
       </section>
-      <footer>Frontend: localhost:5173 · Backend: localhost:3001</footer>
+      <footer>Frontend: localhost:51734 · Backend: localhost:3002</footer>
     </main>
   );
 }

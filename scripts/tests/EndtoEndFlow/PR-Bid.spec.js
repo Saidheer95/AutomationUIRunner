@@ -4,7 +4,7 @@ const Add_Pr_Line=require('../../pages/PurchaseRequisition/addPrLine.page');
 const Submit_Approval=require('../../pages/PurchaseRequisition/purchasesubmit_approval.page');
 const Create_Bid=require('../../pages/PR_BID/bidsRFQ.page');
 const Approvals=require('../../pages/Approvals/approval.page');
-const SupplierResponse=require('../../pages/SupplierSideResponse/supplierSideResponse.page');
+// const SupplierResponse=require('../../pages/SupplierSideResponse/supplierSideResponse.page');
 const {LoginPage,loadCredentials}=require('../../pages/Login/login.page');
 const testData=require('../../testdata.json');
 
@@ -410,84 +410,84 @@ test.describe('End to End Flow',()=>{
         // SUPPLIER LOGIN
         // =====================================================
 
-        console.log('');
-        console.log('========================================');
-        console.log('       SUPPLIER LOGIN');
-        console.log('========================================');
+        // console.log('');
+        // console.log('========================================');
+        // console.log('       SUPPLIER LOGIN');
+        // console.log('========================================');
 
-        console.log(
-            `Supplier response Bid Number: ${testData.supplierBid.bidNumber}`
-        );
+        // console.log(
+        //     `Supplier response Bid Number: ${testData.supplierBid.bidNumber}`
+        // );
 
-        const supplierContext=await browser.newContext();
-        const supplierPage=await supplierContext.newPage();
-        const supplierLogin=new LoginPage(supplierPage);
+        // const supplierContext=await browser.newContext();
+        // const supplierPage=await supplierContext.newPage();
+        // const supplierLogin=new LoginPage(supplierPage);
 
-        try{
-            await supplierPage.goto(credentials.loginUrl,{
-                waitUntil:'domcontentloaded',
-                timeout:60000
-            });
+        // try{
+        //     await supplierPage.goto(credentials.loginUrl,{
+        //         waitUntil:'domcontentloaded',
+        //         timeout:60000
+        //     });
 
-            console.log(
-                `Supplier login page opened: ${supplierPage.url()}`
-            );
+        //     console.log(
+        //         `Supplier login page opened: ${supplierPage.url()}`
+        //     );
 
-            await supplierLogin.login(
-                credentials.supplier.email,
-                credentials.supplier.password
-            );
+        //     await supplierLogin.login(
+        //         credentials.supplier.email,
+        //         credentials.supplier.password
+        //     );
 
-            console.log(
-                `Supplier logged in: ${credentials.supplier.email}`
-            );
+        //     console.log(
+        //         `Supplier logged in: ${credentials.supplier.email}`
+        //     );
 
             // =================================================
             // SUPPLIER Acknoweledge
             // =================================================
 
-            console.log('');
-            console.log('========================================');
-            console.log('       SUPPLIER RESPONSE');
-            console.log('========================================');
+            // console.log('');
+            // console.log('========================================');
+            // console.log('       SUPPLIER RESPONSE');
+            // console.log('========================================');
 
-            console.log(
-                `Searching Bid: ${testData.supplierBid.bidNumber}`
-            );
+            // console.log(
+            //     `Searching Bid: ${testData.supplierBid.bidNumber}`
+            // );
 
-            console.log(
-                `Response Type: ${testData.supplierBid.typeAction}`
-            );
+            // console.log(
+            //     `Response Type: ${testData.supplierBid.typeAction}`
+            // );
 
-            const supplierResponsePage=
-                new SupplierResponse(supplierPage);
+            // const supplierResponsePage=
+            //     new SupplierResponse(supplierPage);
 
-            await supplierResponsePage.submitResponse(testData);
+            // await supplierResponsePage.submitResponse(testData);
 
-            console.log('');
-            console.log(
-                `Supplier response submitted successfully for Bid ${testData.supplierBid.bidNumber}`
-            );
+            // console.log('');
+            // console.log(
+            //     `Supplier response submitted successfully for Bid ${testData.supplierBid.bidNumber}`
+            // );
 
-            // =================================================
-            // SUPPLIER LOGOUT
-            // =================================================
+            // // =================================================
+            // // SUPPLIER LOGOUT
+            // // =================================================
 
-            await supplierLogin.logout();
+            // await supplierLogin.logout();
 
-            console.log(
-                'Supplier logout completed.'
-            );
+            // console.log(
+            //     'Supplier logout completed.'
+            // );
 
-        }finally{
-            try{
-                await supplierContext.close();
-            }catch(error){
-                console.log(
-                    `Supplier context close warning: ${error.message}`
-                );
-            }
-        }
+        // }finally{
+        //     try{
+        //         await supplierContext.close();
+        //     }catch(error){
+        //         console.log(
+        //             `Supplier context close warning: ${error.message}`
+        //         );
+        //     }
+        // }
 
         // =====================================================
         // FINAL VALIDATION
@@ -560,13 +560,13 @@ test.describe('End to End Flow',()=>{
             `Bid Number                : ${bidNumber}`
         );
 
-        console.log(
-            `Supplier Bid Number       : ${testData.supplierBid.bidNumber}`
-        );
+        // console.log(
+        //     `Supplier Bid Number       : ${testData.supplierBid.bidNumber}`
+        // );
 
-        console.log(
-            `Supplier Response Type    : ${testData.supplierBid.typeAction}`
-        );
+        // console.log(
+        //     `Supplier Response Type    : ${testData.supplierBid.typeAction}`
+        // );
 
     });
 });

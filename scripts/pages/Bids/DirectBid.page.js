@@ -49,7 +49,7 @@ class DirectBid {
         await this.page.pause();
 
 
-        const dynamicData = generateBidTestData('Tender');
+        const dynamicData = generateBidTestData('RFQ');
 
 
         // await this.page.pause();
@@ -126,17 +126,17 @@ class DirectBid {
         await this.page.fill(this.selectBidCloseDate, dynamicData.closeDate);
 
 
-        const envelopeOpenDate = this.page.locator(this.selectBidEnvelopeDate);
-        await expect(envelopeOpenDate).toBeEnabled();
+        // const envelopeOpenDate = this.page.locator(this.selectBidEnvelopeDate);
+        // await expect(envelopeOpenDate).toBeEnabled();
 
 
-        console.log('Envelope Open Date:', dynamicData.envelopeOpenDate);
+        // console.log('Envelope Open Date:', dynamicData.envelopeOpenDate);
 
-        await envelopeOpenDate.fill(dynamicData.envelopeOpenDate);
+        // await envelopeOpenDate.fill(dynamicData.envelopeOpenDate);
 
-        await expect(envelopeOpenDate).toHaveValue(
-            dynamicData.envelopeOpenDate
-        );
+        // await expect(envelopeOpenDate).toHaveValue(
+        //     dynamicData.envelopeOpenDate
+        // );
 
 
 
