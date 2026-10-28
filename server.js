@@ -16,7 +16,7 @@ app.use(express.json());
 
 const scripts = {
     createEndtoEndFlow: {
-        label: 'Create End to End Flow',
+        label: 'Create PR to Bid Flow',
         args: ['playwright', 'test', 'tests/EndtoEndFlow/PR-Bid.spec.js']
     },
     createPR: {
@@ -24,8 +24,8 @@ const scripts = {
         args: ['playwright', 'test', 'tests/PurchaseRequisition/createPR.spec.js']
     },
     createBid: {
-        label: 'Create Direct Bid',
-        args: ['playwright', 'test', 'tests/CreateBids/createBIdsDirect.spec.js']
+        label: 'Create Direct RFQ Bid',
+        args: ['playwright', 'test', 'tests/CreateBids/createDirectBid.spec.js']
     }
 };
 
