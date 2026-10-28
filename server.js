@@ -6,7 +6,7 @@ const path = require('path');
 const fs = require('fs');
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3002;
 const PROJECT_DIR = path.resolve(
     process.env.PLAYWRIGHT_PROJECT_DIR || path.join(__dirname, 'scripts')
 );
